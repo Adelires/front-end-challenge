@@ -1,4 +1,4 @@
-# Front-End Challange
+# Front-End Challange  :haircut:
 
 Formulário dinâmico gerado através de API ('fields.json') com campos customizados.
 
