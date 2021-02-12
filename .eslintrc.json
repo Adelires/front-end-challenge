@@ -1,0 +1,36 @@
+{
+  "extends": "eslint:recommended",
+  "parserOptions": {
+    "ecmaVersion": 2017,
+    "sourceType": "module"
+  },
+  "rules": {
+    "indent": ["error", 4],
+    "linebreak-style": ["error", "unix"],
+    "quotes": ["error", "single"],
+    "semi": ["error", "always"],
+    "object-shorthand": ["error", "always"],
+    "comma-dangle": [
+      "error",
+      {
+        "arrays": "always-multiline",
+        "objects": "always-multiline",
+        "imports": "never",
+        "exports": "never",
+        "functions": "never"
+      }
+    ],
+    "no-empty": "warn",
+    "no-cond-assign": ["error", "always"],
+    "for-direction": "off"
+  },
+  "globals": {
+    "fetch": false,
+    "document": false,
+    "window": false
+  },
+  "env": {
+    "jest/globals": true
+  },
+  "plugins": ["jest"]
+}

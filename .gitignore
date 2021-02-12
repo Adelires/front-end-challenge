@@ -1,0 +1,4 @@
+node_modules/
+coverage/
+public/*
+!public/index.html

@@ -1,0 +1,103 @@
+@import "utils";
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    width: 95vw;
+    padding: 36px;
+    max-width: 740px;
+    margin: 12vh auto;
+    border-radius: 7px;
+    box-sizing: border-box;
+    border: 2px solid $border-primary;
+    background-color: $background-primary;
+
+    @media only screen and (min-width: 768px) {
+        padding: 84px;
+    }
+}
+
+.title {
+    margin: 0 0 60px;
+    text-align: center;
+
+    &__description {
+        display: block;
+        font-size: 16px;
+        margin-top: 8px;
+        line-height: 24px;
+    }
+}
+
+.form-item {
+    width: 100%;
+    margin-bottom: 24px;
+
+    &__label {
+        display: block;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 22px;
+        margin-bottom: 10px;
+    }
+
+    &__select {
+        height: 48px;
+        padding: 12px;
+        @extend %content_field;
+    }
+
+    &__textarea {
+        padding: 12px;
+        @extend %content_field;
+    }
+
+    &__input {
+        padding: 8px;
+        display: block;
+        @extend %content_field;
+    }
+
+    &__alert {
+        margin: 6px 0 0;
+        color: $text-secondary;
+    }
+
+    &--alert &__select,
+    &--alert &__input {
+        background-color: $background-secondary;
+    }
+}
+
+.form__buttons {
+    width: 100%;
+    @include flexbox;
+    @include justify-content(space-between);
+
+    .button {
+        width: 100%;
+        outline: none;
+        cursor: pointer;
+        font-size: 20px;
+        margin: 12px 4px;
+        font-weight: 600;
+        line-height: 20px;
+        padding: 14px 5px;
+        border-radius: 8px;
+        color: $text-tertiary;
+        border: 2px solid $border-tertiary;
+        background-color: $button-primary;
+
+        &__previous {
+            color: $button-primary;
+            border-color: $button-primary;
+            background-color: $button-secondary;
+        }
+    }
+}

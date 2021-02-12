@@ -1,0 +1,49 @@
+/* COLORS */
+
+$text-primary: #575757;
+$text-secondary: #b40300;
+$text-tertiary: #e5f7ff;
+
+$border-primary: #000;
+$border-seconday: #212121;
+$border-tertiary: #0000;
+
+$background-primary: #fff399;
+$background-secondary: #fdecec;
+$background-tertiary: #f8f8f8;
+
+$button-primary: #195ca9;
+$button-secondary: transparent;
+
+/* PLACEHOLDERS */
+
+%content_field {
+    width: 100%;
+    outline: none;
+    font-size: 16px;
+    cursor: pointer;
+    line-height: 24px;
+    border-radius: 4px;
+    color: $text-primary;
+    box-sizing: border-box;
+    border: 1px solid $border-seconday;
+    background-color: $background-tertiary;
+}
+
+/* MIXINS */
+
+@mixin flexbox {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+@mixin justify-content($justify) {
+    -webkit-justify-content: $justify;
+    -moz-justify-content: $justify;
+    -ms-justify-content: $justify;
+    justify-content: $justify;
+    -ms-flex-pack: $justify;
+}
