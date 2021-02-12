@@ -5,6 +5,7 @@ Formulário dinâmico gerado através de API ('fields.json') com campos customiz
 Foi utilizado um servidor Node.js para servir o arquivo JSON ao front-end, este que, faz a apresentação do formulário de serviço em etapas, e dos dados cadastrais na etapa final.
 
 ## Dependências
+
 - ESLint (ES6)
 - Stylelint (SCSS)
 - Jest
@@ -16,13 +17,13 @@ Foi utilizado um servidor Node.js para servir o arquivo JSON ao front-end, este 
 ## Executando o projeto
 
 ```sh
-# Clone o repositorio
+# Clone o repositório
 $ git clone https://github.com/adelires/front-end-challenge.git
 
 # Acesso a pasta do projeto
 $ cd ./front-end-challenge
 
-# Instale as dependencias
+# Instale as dependências
 $ npm install
 
 # Inicialize a api
